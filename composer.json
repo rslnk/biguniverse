@@ -37,13 +37,38 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "mines/no-category-base-wpml",
+        "version": "3.1",
+        "type": "wordpress-muplugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/mines/no-category-base-wpml/archive/master.zip"
+        }
+      }
     }
   ],
   "require": {
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.1",
     "composer/installers": "v1.0.12",
-    "vlucas/phpdotenv": "1.0.9"
+    "vlucas/phpdotenv": "1.0.9",
+
+    "mines/no-category-base-wpml": "3.1",
+
+    "wpackagist-plugin/cyr3lat": "3.5",
+    "wpackagist-plugin/tablepress": "1.5.1",
+    "wpackagist-plugin/tablepress-chartist": "0.6",
+    "wpackagist-plugin/google-publisher": "1.0.2",
+    "wpackagist-plugin/all-in-one-seo-pack": "2.2.5.1",
+
+    "wpackagist-plugin/theme-check": "*",
+    "wpackagist-plugin/debug-bar": "*",
+    "wpackagist-plugin/wordpress-beta-tester": "*",
+    "wpackagist-plugin/deprecation-checker": "*"
   },
   "extra": {
     "installer-paths": {
