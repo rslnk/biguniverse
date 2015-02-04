@@ -25,6 +25,8 @@ web/media/*
 !web/app/mu-plugins/bedrock-autoloader.php
 !web/app/mu-plugins/base-roots-settings
 !web/app/mu-plugins/base-roots-settings/*
+!web/app/mu-plugins/wp-no-category-base
+!web/app/mu-plugins/wp-no-category-base/*
 
 # Vendor (e.g. Composer)
 vendor
