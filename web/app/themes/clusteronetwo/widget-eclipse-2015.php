@@ -3,7 +3,7 @@
 	<div class="head"><h1><strong>Солнечное затмение 2015<br /></strong>Фото, видео, наблюдения.</h1><div class="split"></div></div>
 
 
-	<?php query_posts('tag=solnechnoe-zatmenie-2015&showposts=4'); ?>
+	<?php query_posts('tag=solnechnoe-zatmenie-2015&showposts=10'); ?>
 
 		<?php if ( have_posts() ) : ?>
 
