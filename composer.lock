@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "970361055f5fe7e0de6f7cb57a1d6ede",
+    "hash": "13bfb8e70d27c53a2b30c05189485f6c",
     "packages": [
         {
             "name": "composer/installers",
@@ -171,6 +171,17 @@
             ],
             "description": "A custom installer to handle deploying WordPress with composer",
             "time": "2013-09-09 15:04:54"
+        },
+        {
+            "name": "roots/soil",
+            "version": "3.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/roots/soil/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-muplugin"
         },
         {
             "name": "vlucas/phpdotenv",

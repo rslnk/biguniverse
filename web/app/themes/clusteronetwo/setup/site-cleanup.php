@@ -2,6 +2,16 @@
 
 /* ------------------------------- AND NOW Starting clean-up --------------------------------------- */
 
+// Activate Soil Plugin
+
+add_theme_support('soil-clean-up');
+add_theme_support('soil-relative-urls');
+//add_theme_support('soil-nice-search');
+add_theme_support('soil-google-analytics');
+define('GOOGLE_ANALYTICS_ID', 'UA-20570848-2');
+add_theme_support('soil-js-to-footer');
+add_theme_support('soil-disable-asset-versioning');
+
 // remove unncessary header info
 function remove_header_info() {
     remove_action('wp_head', 'rsd_link');
@@ -44,7 +54,7 @@ function roots_robots() {
 
 add_action('do_robots', 'roots_robots');
 
-/** 
+/**
  * Exclude pages from search results
  *
 */
@@ -69,8 +79,8 @@ function thumbnail_in_rssfeed($content) {
 add_filter('the_excerpt_rss', 'thumbnail_in_rssfeed');
 add_filter('the_content_feed', 'thumbnail_in_rssfeed');
 
-/* 
-* The following functions remove 
+/*
+* The following functions remove
 * HTML title attribute from the WP generated markup
 *
 */
