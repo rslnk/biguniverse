@@ -24,6 +24,6 @@
 
 	<?php wp_reset_query(); ?>
 
-	<div class="center"><div id="wiki"><a href="<?php echo home_url(); ?>/tag/2012-da14" class="button"><span>Все материалы<i class="awesome icon-chevron-right "></i></span></a></div></div>
+	<div class="center"><div id="wiki"><a href="<?php echo home_url(); ?>/tag/solnechnoe-zatmenie-2015" class="button"><span>Все материалы<i class="awesome icon-chevron-right "></i></span></a></div></div>
 
 </div>
