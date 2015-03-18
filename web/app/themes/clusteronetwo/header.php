@@ -44,7 +44,10 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.0.min.js"><\/script>')</script>
-
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+	<script type="text/javascript">
+	  VK.init({apiId: 2677034, onlyWidgets: true});
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
