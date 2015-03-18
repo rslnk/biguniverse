@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "48a4b09384c75a56b6f015bd151fe496",
+    "hash": "37691186c64ad2d2fbe6e194722d9008",
     "packages": [
         {
             "name": "composer/installers",
@@ -92,16 +92,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.1",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "fced41fbfeb6b6a1f48f505426da0cb392d44274"
+                "reference": "b6a0e3c2ef178f97ce8b709897fd4411420b3ccb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/fced41fbfeb6b6a1f48f505426da0cb392d44274",
-                "reference": "fced41fbfeb6b6a1f48f505426da0cb392d44274",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/b6a0e3c2ef178f97ce8b709897fd4411420b3ccb",
+                "reference": "b6a0e3c2ef178f97ce8b709897fd4411420b3ccb",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2014-12-18 18:31:41"
+            "time": "2015-02-18 22:16:06"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -171,17 +171,6 @@
             ],
             "description": "A custom installer to handle deploying WordPress with composer",
             "time": "2013-09-09 15:04:54"
-        },
-        {
-            "name": "mines/no-category-base-wpml",
-            "version": "3.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/mines/no-category-base-wpml/archive/master.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "wordpress-muplugin"
         },
         {
             "name": "vlucas/phpdotenv",
