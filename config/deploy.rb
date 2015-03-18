@@ -1,6 +1,6 @@
 set :application, 'biguniverse'
 set :rootuser, 'biguniverse'
-set :user, 'deploy'
+set :user, 'biguniverse'
 
 set :scm, :git
 set :repo_url, "git@github.com:rslnk/biguniverse.git"
@@ -28,7 +28,7 @@ set :log_level, :info
 # it needs to be added to linked_files so it persists across deploys:
 set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
 set :linked_files, fetch(:linked_files, []).push('.env')
-set :linked_dirs, fetch(:linked_dirs, []).push('web/app/media')
+set :linked_dirs, fetch(:linked_dirs, []).push('web/media')
 
 namespace :deploy do
   desc 'Restart application'
