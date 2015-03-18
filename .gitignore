@@ -41,3 +41,4 @@ bin
 
 # Sublime Text project
 *.sublime-workspace
+*.sublime-project
