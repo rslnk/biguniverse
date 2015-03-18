@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?> xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
+	<meta name="google-site-verification" content="22lVpgLZnuEQH_chSH5E7kt4jRPIb7Vurix8ZEl2lP4" />
 	<title>
 	<?php
         if ( is_home() || is_front_page() ) { bloginfo('name'); print ' &mdash; '; print get_option('moto'); get_page_number(); }
@@ -41,22 +42,11 @@
 	<?php } ?>
 	<!-- end opengraph-->
 
-	<?php
-		//wp_enqueue_script('jquery');
-		//wp_enqueue_script('cycle', get_template_directory_uri() . '/js/jquery.cycle.all.min.js', 'jquery', false);
-		//wp_enqueue_script('slideshow', get_template_directory_uri() . '/js/slideshow.js', 'jquery', false);
-	?>
-	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.0.min.js"><\/script>')</script>
-
-
-
-
 
 </head>
 
 <body <?php body_class(); ?>>
-
-
 
 <?php if ( !is_404() ) get_template_part( 'bodyhead' ); ?>
