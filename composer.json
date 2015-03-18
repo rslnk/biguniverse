@@ -50,6 +50,7 @@
     "wpackagist-plugin/tablepress-chartist": "0.6",
     "wpackagist-plugin/google-publisher": "1.0.2",
     "wpackagist-plugin/all-in-one-seo-pack": "2.2.5.1",
+    "wpackagist-plugin/password-protected": "1.9",
 
     "wpackagist-plugin/theme-check": "*",
     "wpackagist-plugin/debug-bar": "*",

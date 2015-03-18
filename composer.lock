@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "37691186c64ad2d2fbe6e194722d9008",
+    "hash": "970361055f5fe7e0de6f7cb57a1d6ede",
     "packages": [
         {
             "name": "composer/installers",
@@ -322,6 +322,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-publisher/"
+        },
+        {
+            "name": "wpackagist-plugin/password-protected",
+            "version": "1.9",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/password-protected/",
+                "reference": "tags/1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/password-protected.1.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/password-protected/"
         },
         {
             "name": "wpackagist-plugin/tablepress",
