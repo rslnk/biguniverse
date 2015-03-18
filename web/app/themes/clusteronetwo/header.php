@@ -42,8 +42,7 @@
 	<?php } ?>
 	<!-- end opengraph-->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.0.min.js"><\/script>')</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 	<script type="text/javascript">
 	  VK.init({apiId: 2677034, onlyWidgets: true});
@@ -51,6 +50,16 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=210792705638856&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="vk_api_transport"></div>
 <script type="text/javascript">
   window.vkAsyncInit = function() {
