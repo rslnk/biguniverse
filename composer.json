@@ -61,15 +61,11 @@
     "wpackagist-plugin/cyr3lat": "3.5",
     "wpackagist-plugin/tablepress": "1.5.1",
     "wpackagist-plugin/tablepress-chartist": "0.6",
+    "wpackagist-plugin/wp-table-reloaded": "1.9.3",
     "wpackagist-plugin/google-publisher": "1.0.2",
     "wpackagist-plugin/all-in-one-seo-pack": "2.2.5.1",
     "wpackagist-plugin/password-protected": "1.9",
-    "roots/wp-h5bp-htaccess": "1.1.0",
-
-    "wpackagist-plugin/theme-check": "*",
-    "wpackagist-plugin/debug-bar": "*",
-    "wpackagist-plugin/wordpress-beta-tester": "*",
-    "wpackagist-plugin/deprecation-checker": "*"
+    "roots/wp-h5bp-htaccess": "1.1.0"
   },
   "extra": {
     "installer-paths": {

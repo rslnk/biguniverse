@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e2675b29d6fa844745c0c3e2383e2e3d",
+    "hash": "1082c2d7efcc6fddfaf8fef18a927155",
     "packages": [
         {
             "name": "composer/installers",
@@ -319,46 +319,6 @@
             "homepage": "https://wordpress.org/plugins/cyr3lat/"
         },
         {
-            "name": "wpackagist-plugin/debug-bar",
-            "version": "0.8.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/debug-bar/",
-                "reference": "tags/0.8.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/debug-bar.0.8.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/debug-bar/"
-        },
-        {
-            "name": "wpackagist-plugin/deprecation-checker",
-            "version": "0.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/deprecation-checker/",
-                "reference": "tags/0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/deprecation-checker.0.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/deprecation-checker/"
-        },
-        {
             "name": "wpackagist-plugin/google-publisher",
             "version": "1.0.2",
             "source": {
@@ -408,7 +368,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/tablepress.1.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/tablepress.1.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -428,7 +388,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/tablepress-chartist.0.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/tablepress-chartist.0.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -439,16 +399,16 @@
             "homepage": "https://wordpress.org/plugins/tablepress-chartist/"
         },
         {
-            "name": "wpackagist-plugin/theme-check",
-            "version": "20141222.1",
+            "name": "wpackagist-plugin/wp-table-reloaded",
+            "version": "1.9.3",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/theme-check/",
-                "reference": "tags/20141222.1"
+                "url": "http://plugins.svn.wordpress.org/wp-table-reloaded/",
+                "reference": "tags/1.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/theme-check.20141222.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-table-reloaded.1.9.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -456,27 +416,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/theme-check/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-beta-tester",
-            "version": "0.99",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-beta-tester/",
-                "reference": "tags/0.99"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-beta-tester.0.99.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-beta-tester/"
+            "homepage": "https://wordpress.org/plugins/wp-table-reloaded/"
         }
     ],
     "packages-dev": [],
