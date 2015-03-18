@@ -14,12 +14,10 @@
 	</title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s последние публикации', 'clusterone' ), esc_html( get_bloginfo('name')) ); ?>" />
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s последние комментарии', 'clusterone' ), esc_html( get_bloginfo('name')) ); ?>" />
-	<link rel="shortcut icon" href="<?php echo home_url(); ?>/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" type="image/x-icon" />
+
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/fonts/font-awesome.css" type="text/css" />
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/fonts/font-awesome-ie7.css" type="text/css" />
 
 	<!--opengraph -->
 	<?php if (have_posts()):while(have_posts()):the_post(); endwhile; endif;?>
@@ -32,13 +30,13 @@
 	<meta property="og:title" content="<?php single_post_title(''); ?>" />
 	<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
 	<meta property="og:type" content="article" />
-	<meta property="og:image" content="<?php if (function_exists('wp_get_attachment_thumb_url')) {echo wp_get_attachment_thumb_url(get_post_thumbnail_id($post->ID)); }?>" />
+	<meta property="og:image" content="<?php if (function_exists('wp_get_attachment_thumb_url')) {echo wp_get_attachment_thumb_url(get_post_thumbnail_id($post->ID)); } ?>" />
 	<!-- if page is others -->
 	<?php } else { ?>
 	<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="<?php echo home_url(); ?>/share-fallback-logo.jpg" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/share-fallback-logo.jpg" />
 	<?php } ?>
 	<!-- end opengraph-->
 
