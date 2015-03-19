@@ -1,18 +1,22 @@
-<div id="fb-root"></div>  
+<div id="fb-root"></div>
 
 <div id="wrapper" class="hfeed">
 
 	<div id="main">
-	
+
 		<div id="header">
-				
+
+			<ins id="top-ad-1"
+			style="display: none;"
+			class="adsbygoogle-placeholder"></ins>
+
 			<div id="branding">
 				<div class="skip-link"><h1><a href="<?php echo home_url(); ?>/" title="<?php echo home_url(); ?>" rel="home"><?php bloginfo( 'name' ) ?></a></h1></div>
 				<a class="logo" href="<?php echo home_url(); ?>" alt="<?php bloginfo( 'name' ) ?>" rel="home"></a>
 			</div><!-- #branding -->
 
 		<div id="top-navigation">
-				
+
 			<a class="skip-link" href="#content" title="<?php _e( 'Перейти к содержанию', 'clusterone' ) ?>"><?php _e( 'Перейти к содержанию', 'clusterone' ) ?></a>
 
 			<div id="navmenu">
