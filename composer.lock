@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1082c2d7efcc6fddfaf8fef18a927155",
+    "hash": "2baa45b5a676afdc898c1a8680039e74",
     "packages": [
         {
             "name": "composer/installers",
@@ -288,7 +288,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.2.2.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -337,6 +337,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-publisher/"
+        },
+        {
+            "name": "wpackagist-plugin/leyka",
+            "version": "2.2.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/leyka/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/leyka.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/leyka/"
         },
         {
             "name": "wpackagist-plugin/password-protected",
