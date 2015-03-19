@@ -33,10 +33,6 @@
 
 						<?php the_content(); ?>
 
-						  <ins id="post-content-ad-1"
-  						style="display: none;"
-  						class="adsbygoogle-placeholder"></ins>
-
 					</div><!-- #post-content -->
 
 					<div class="post-tags"><?php the_tags( '<strong>' . __('Теги: ', 'clusterone' ) . '</strong>' . '<span class="post-tags">', ", ", "\n\t\t\t\t\t\t\n" . '</span>' ); ?></div>
