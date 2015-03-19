@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2baa45b5a676afdc898c1a8680039e74",
+    "hash": "def5f00e6fd8c21b7a93e2a08c6f2fa1",
     "packages": [
         {
             "name": "composer/installers",
@@ -320,7 +320,7 @@
         },
         {
             "name": "wpackagist-plugin/google-publisher",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/google-publisher/",
@@ -328,7 +328,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/google-publisher.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-publisher.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -417,26 +417,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/tablepress-chartist/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-table-reloaded",
-            "version": "1.9.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-table-reloaded/",
-                "reference": "tags/1.9.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-table-reloaded.1.9.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-table-reloaded/"
         }
     ],
     "packages-dev": [],
