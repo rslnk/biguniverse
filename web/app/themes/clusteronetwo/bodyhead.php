@@ -1,23 +1,27 @@
-<div id="fb-root"></div>  
-
 <div id="wrapper" class="hfeed">
 
 	<div id="main">
-	
+
 		<div id="header">
-				
+
+			<?php get_template_part( 'banner', 'top--donate' ); ?>
+
 			<div id="branding">
 				<div class="skip-link"><h1><a href="<?php echo home_url(); ?>/" title="<?php echo home_url(); ?>" rel="home"><?php bloginfo( 'name' ) ?></a></h1></div>
 				<a class="logo" href="<?php echo home_url(); ?>" alt="<?php bloginfo( 'name' ) ?>" rel="home"></a>
 			</div><!-- #branding -->
 
 		<div id="top-navigation">
-				
+
 			<a class="skip-link" href="#content" title="<?php _e( 'Перейти к содержанию', 'clusterone' ) ?>"><?php _e( 'Перейти к содержанию', 'clusterone' ) ?></a>
 
 			<div id="navmenu">
 				<ul>
-					<?php wp_nav_menu();?>
+								<?php wp_nav_menu( array(
+
+				'theme_location' => 'primary_navigation'
+
+			) ); ?>
 				</ul>
 			</div>
 

@@ -320,8 +320,8 @@ header, nav, article, footer, section { display:block;}
 	padding-top: 15px;
 	border-top: solid 2px #000;
 }
-.copyright {
-	font-size: 11px;
+.copyright p {
+	font-size: 11px !important;
 }
 
 #branding {
@@ -375,8 +375,12 @@ header, nav, article, footer, section { display:block;}
 	padding-top: 10px;
 	border-top: 1px solid #e3e3e3;
 }
+.footer-menu, .footer-menu ul {
+	margin-left: 0;
+}
 .footer-menu, .footer-menu li {
 	margin-left: 0;
+	display: inline-block;
 }
 .footer-menu a {
 	margin-right: 20px;
@@ -1368,6 +1372,12 @@ div.clusterone-slideshow .not-first {display: none}
 	font-size: 10px;
 }
 
+.page h1 {
+	font-size: 24px;
+}
+.page p {
+	font-size: 16px;
+}
 /*** Erorr 404 ***/
 
 .page-404 {

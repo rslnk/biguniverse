@@ -31,7 +31,7 @@ function theme_setup() {
 
   // Add default posts and comments RSS feed links to head
   //add_theme_support( 'automatic-feed-links' );
-  
+
   // set the permalink structure
   update_option('permalink_structure', '/%category%/%postname%/');
 
@@ -42,7 +42,7 @@ function theme_setup() {
   // Show a certain number of posts per page.
   update_option( 'posts_per_page', 14 );
     update_option( 'paging_mode', 'default' );
-  
+
   // Add support for a variety of post formats
   //add_theme_support( 'post-formats', array( 'aside', 'link', 'gallery', 'status', 'quote', 'image' ) );
 
@@ -57,11 +57,11 @@ function theme_setup() {
   // Sets default widht for media files if it wasn't provided
   if ( ! isset( $content_width ) ) $content_width = 990;
 
-   // This theme uses wp_nav_menu() in two locations.  
-  register_nav_menus( array(  
-    'primary_navigation' => __( 'Основная навигация:', 'clusterone' ),  
-    'utility_navigation' => __('Вспомогательная навигация:', 'clusterone')
-  ));  
+   // This theme uses wp_nav_menu() in two locations.
+  register_nav_menus( array(
+    'primary_navigation' => __( 'Основная навигация:', 'clusterone' ),
+    'secondary_navigation' => __('Вспомогательная навигация:', 'clusterone')
+  ));
 }
 
 add_action('after_setup_theme', 'theme_setup');
@@ -114,7 +114,7 @@ function roots_rel_canonical() {
 //define(SINGLE_PATH, TEMPLATEPATH . '/single');
 add_filter('single_template', 'my_single_template');
 
-/** 
+/**
  * Define a constant path to a single template folder
  * Filter the single_template with a custom function
  *
@@ -122,10 +122,10 @@ add_filter('single_template', 'my_single_template');
  * Check by category slug and ID
  *
  */
- 
+
 function my_single_template($single) {
   global $wp_query, $post;
-  
+
   /**
   * Checks for single template by category
   * Check by category slug and ID
@@ -143,7 +143,7 @@ function my_single_template($single) {
 /*
 Plugin Name: TheRussianDate
 Plugin URI: http://www.yaroshevich.ru/php/the-wp-russian-date
-Description: russian formated date 
+Description: russian formated date
 Version: 1.01
 Author: Vasil Yaroshevich
 Author URI: http://www.yaroshevich.ru
@@ -170,7 +170,7 @@ if ($RinTemplate===FALSE) {
   if($RinTemplate > 0) {
     echo get_the_time(substr($template, 0,$RinTemplate));
   }
-  
+
   $months= array (
   "января",
   "февраля",
@@ -186,7 +186,7 @@ if ($RinTemplate===FALSE) {
   "декабря"
   );
   echo $months[get_the_time('n')-1];
-  the_russian_time(substr($template,$RinTemplate+1));   
+  the_russian_time(substr($template,$RinTemplate+1));
 }
 }
 ?>
