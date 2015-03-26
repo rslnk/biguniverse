@@ -447,10 +447,10 @@ header, nav, article, footer, section { display:block;}
 	font-family: Arial, sans-serif;
 }
 
-.post .preamble {
+.post .preamble p {
 	font-family: "Helvetica", Arial, sans-serif;
-	font-size: 19px;
-	line-height: 27px;
+	font-size: 22px;
+	line-height: 30px;
 }
 
 .post .mata, .post .meta a, .post .meta .author {
