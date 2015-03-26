@@ -316,6 +316,9 @@ header, nav, article, footer, section { display:block;}
 #sidebar {
 	float: left;
 }
+#sidebar h1 {
+	font-size: 12px;
+}
 #footer {
 	padding-top: 15px;
 	border-top: solid 2px #000;
