@@ -1,10 +1,8 @@
 <div id="sidebar" class="x2">
 
+  <?php if ( !is_tag('lunnye-zatmeniya-2015') ) get_template_part('widget', 'sidebar-posts--moon-eclipse-2015'); ?>
+
   <?php get_template_part('widget', 'sidebar-social--twitter'); ?>
-
-  <?php if ( is_single() ) get_template_part('widget', 'sidebar-ads--telescopes'); ?>
-
-  <?php get_template_part('widget', 'sidebar-ads--solar-eclipse-2015'); ?>
 
   <?php if ( !is_tag('solnechnoe-zatmenie-2015') ) get_template_part('widget', 'sidebar-posts--solar-eclipse-2015'); ?>
 
