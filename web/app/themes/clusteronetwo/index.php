@@ -45,8 +45,6 @@
 
 			</div> <!-- /videos-block -->
 
-			<?php get_template_part('widget', 'sidebar-ads--telescopes'); ?>
-
 			<div id="projects-block" class="block x1 inline">
 
 				<div class="head">Рубрики</div>
