@@ -40,7 +40,7 @@ function theme_setup() {
   //update_option('upload_path', 'assets');
 
   // Show a certain number of posts per page.
-  update_option( 'posts_per_page', 14 );
+  update_option( 'posts_per_page', 25 );
     update_option( 'paging_mode', 'default' );
 
   // Add support for a variety of post formats
