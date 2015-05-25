@@ -3,7 +3,7 @@
 	<div class="head"><h1><strong>Комета Чурюмова-Герасименко</strong><br />новости, фото, видео</h1><div class="split"></div></div>
 
 
-	<?php query_posts('tag=kometa-67p-churyumov-gerasimenko&showposts=7'); ?>
+	<?php query_posts('tag=kometa-67p-churyumov-gerasimenko&showposts=5'); ?>
 
 		<?php if ( have_posts() ) : ?>
 

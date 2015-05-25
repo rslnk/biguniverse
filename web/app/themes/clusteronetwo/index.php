@@ -16,7 +16,7 @@
 
 			<div id="videos-block">
 
-				<?php query_posts('category_name=videos&showposts=3'); // показываем последние 3 поста из категории «видео» ?>
+				<?php query_posts('category_name=videos&showposts=8'); // показываем последние 3 поста из категории «видео» ?>
 
 					<?php if ( have_posts() ) : ?>
 

@@ -23,6 +23,6 @@
 
 	<?php wp_reset_query(); ?>
 
-	<div class="center"><div id="wiki"><a href="<?php echo home_url(); ?>/tag/kometa-67p-churyumov-gerasimenko" class="button"><span>Все материалы<i class="awesome icon-chevron-right "></i></span></a></div></div>
+	<div class="center"><div id="wiki"><a href="<?php echo home_url(); ?>/tag/new-horizons" class="button"><span>Все материалы<i class="awesome icon-chevron-right "></i></span></a></div></div>
 
 </div>
