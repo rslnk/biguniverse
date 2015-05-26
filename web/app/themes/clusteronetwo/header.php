@@ -45,9 +45,10 @@
 	<script type="text/javascript">
 	  VK.init({apiId: 2677034, onlyWidgets: true});
 	</script>
+	<?php do_action('wp_head'); ?>	
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
