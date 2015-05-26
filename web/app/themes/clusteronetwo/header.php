@@ -45,7 +45,7 @@
 	<script type="text/javascript">
 	  VK.init({apiId: 2677034, onlyWidgets: true});
 	</script>
-	<?php do_action('wp_head'); ?>	
+	<?php do_action('wp_head'); ?>
 </head>
 
 <body <?php body_class(); ?>
@@ -76,4 +76,4 @@
   }, 0);
 </script>
 
-<?php if ( !is_404() ) get_template_part( 'bodyhead' ); ?>
+<?php if ( !is_404() ) get_template_part( 'site-header' ); ?>
