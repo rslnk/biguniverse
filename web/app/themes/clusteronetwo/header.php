@@ -39,13 +39,15 @@
 	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/share-fallback-logo.jpg" />
 	<?php } ?>
 	<!-- end opengraph-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
-	<script type="text/javascript">
-	  VK.init({apiId: 2677034, onlyWidgets: true});
-	</script>
-	<?php do_action('wp_head'); ?>
+	<?php
+		if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+		function my_jquery_enqueue() {
+		   wp_deregister_script('jquery');
+		   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js", false, null);
+		   wp_enqueue_script('jquery');
+		}
+	?>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>
@@ -76,4 +78,4 @@
   }, 0);
 </script>
 
-<?php if ( !is_404() ) get_template_part( 'site-header' ); ?>
+<?php if ( !is_404() ) get_template_part( 'bodyhead' ); ?>
