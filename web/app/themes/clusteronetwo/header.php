@@ -48,6 +48,13 @@
 		}
 	?>
 	<?php wp_head(); ?>
+
+	<script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	  VK.init({
+	    apiId: 2677034
+	  });
+	</script>
 </head>
 
 <body <?php body_class(); ?>
@@ -60,22 +67,5 @@
   js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=210792705638856&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
-<div id="vk_api_transport"></div>
-<script type="text/javascript">
-  window.vkAsyncInit = function() {
-    VK.init({
-      apiId: 2677034
-    });
-  };
-
-  setTimeout(function() {
-    var el = document.createElement("script");
-    el.type = "text/javascript";
-    el.src = "//vk.com/js/api/openapi.js";
-    el.async = true;
-    document.getElementById("vk_api_transport").appendChild(el);
-  }, 0);
-</script>
 
 <?php if ( !is_404() ) get_template_part( 'site-header' ); ?>
