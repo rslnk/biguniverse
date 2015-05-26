@@ -78,4 +78,4 @@
   }, 0);
 </script>
 
-<?php if ( !is_404() ) get_template_part( 'bodyhead' ); ?>
+<?php if ( !is_404() ) get_template_part( 'site-header' ); ?>
