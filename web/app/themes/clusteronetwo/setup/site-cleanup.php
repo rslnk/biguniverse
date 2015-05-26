@@ -4,13 +4,13 @@
 
 // Activate Soil Plugin
 
-add_theme_support('soil-clean-up');
-add_theme_support('soil-relative-urls');
-//add_theme_support('soil-nice-search');
+//add_theme_support('soil-clean-up');
+//add_theme_support('soil-relative-urls');
+add_theme_support('soil-nice-search');
 add_theme_support('soil-google-analytics');
 define('GOOGLE_ANALYTICS_ID', 'UA-20570848-2');
-add_theme_support('soil-js-to-footer');
-add_theme_support('soil-disable-asset-versioning');
+//add_theme_support('soil-js-to-footer');
+//add_theme_support('soil-disable-asset-versioning');
 
 // remove unncessary header info
 function remove_header_info() {
