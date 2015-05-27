@@ -2,7 +2,7 @@
 
 * Fix jQuery and wp_head hook calls
 * Temporary remove VK asynchronous code
-* Disable Soil plugin jQuery and relative URL support due to strange scripts behaviour.
+* Disable Soil plugin jQuery and relative URL support due to strange scripts behavior.
 * Update to WordPress 4.2.2
 * Rename bodyhead.php template to site-header.php
 
