@@ -37,13 +37,52 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "roots/soil",
+        "version": "3.4.0",
+        "type": "wordpress-muplugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/roots/soil/archive/master.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "roots/wp-h5bp-htaccess",
+        "version": "2.0.1",
+        "type": "wordpress-muplugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/roots/wp-h5bp-htaccess/archive/master.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advancedcustomfields/acf-pro",
+        "version": "5.2.5",
+        "type": "wordpress-muplugin",
+        "dist": {
+          "type": "zip",
+          "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzYwMTd8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTQtMDctMjkgMDA6MTM6MDg="
+        }
+      }
     }
   ],
   "require": {
     "php": ">=5.4",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "~1.0.9",
-    "johnpbloch/wordpress": "4.2.2"
+    "johnpbloch/wordpress": "4.2.2",
+    "roots/soil": "3.4.0",
+    "roots/wp-h5bp-htaccess": "2.0.1", 
+    "advancedcustomfields/acf-pro": "5.2.5"
   },
   "extra": {
     "installer-paths": {

@@ -1,11 +1,22 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "07dd85371456253ffba1c0ec34eba9fb",
+    "hash": "5a4e9a610fddb4b4eae06fea6a178c9d",
     "packages": [
+        {
+            "name": "advancedcustomfields/acf-pro",
+            "version": "5.2.5",
+            "dist": {
+                "type": "zip",
+                "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzYwMTd8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTQtMDctMjkgMDA6MTM6MDg=",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-muplugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.21",
@@ -182,6 +193,28 @@
             ],
             "description": "A custom installer to handle deploying WordPress with composer",
             "time": "2013-09-09 15:04:54"
+        },
+        {
+            "name": "roots/soil",
+            "version": "3.4.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/roots/soil/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-muplugin"
+        },
+        {
+            "name": "roots/wp-h5bp-htaccess",
+            "version": "2.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/roots/wp-h5bp-htaccess/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-muplugin"
         },
         {
             "name": "vlucas/phpdotenv",
