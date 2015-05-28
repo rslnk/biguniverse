@@ -10,15 +10,16 @@ var gulpif       = require('gulp-if');
 var imagemin     = require('gulp-imagemin');
 var jshint       = require('gulp-jshint');
 var lazypipe     = require('lazypipe');
-var less         = require('gulp-less');
 var merge        = require('merge-stream');
 var minifyCss    = require('gulp-minify-css');
 var plumber      = require('gulp-plumber');
 var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
-var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var iconify      = require('gulp-iconify');
+var stylus       = require('gulp-stylus');
+var koutoSwiss   = require('kouto-swiss');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -82,7 +83,7 @@ var cssTasks = function(filename) {
       return gulpif(enabled.maps, sourcemaps.init());
     })
     .pipe(function() {
-      return gulpif('*.less', less());
+      return gulpif('*.styl', stylus());
     })
     .pipe(function() {
       return gulpif('*.scss', sass({
@@ -169,6 +170,7 @@ gulp.task('styles', ['wiredep'], function() {
       });
     }
     merged.add(gulp.src(dep.globs, {base: 'styles'})
+      .pipe(stylus({ use: [ koutoSwiss() ] }))
       .pipe(cssTasksInstance));
   });
   return merged
@@ -211,6 +213,34 @@ gulp.task('images', function() {
     }))
     .pipe(gulp.dest(path.dist + 'images'))
     .pipe(browserSync.stream());
+});
+
+// ### Iconify
+// `gulp iconify` - Convert svg files to css classes with png fallback
+gulp.task('iconify', function() {
+  iconify({
+    src: './assets/icons/*.svg',
+    cssOutput: './dist/styles/',
+    pngOutput: './dist/icons/',
+    styleTemplate: './assets/icons/_icon_gen.scss.mustache',
+    defaultWidth: '60px',
+    defaultHeight: '60px',
+    svgoOptions: {
+      enabled: false,
+      options: {
+        plugins: [
+          { cleanupAttrs: true },
+          { removeEmptyAttrs: true },
+          { removeXMLProcInst: true },
+          { removeMetadata: true },
+          { removeDoctype: true },
+          { removeUnknownsAndDefaults: true },
+          { mergePaths: false },
+          { convertShapeToPath: true }
+        ]
+      }
+    }
+  });
 });
 
 // ### JSHint
