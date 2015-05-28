@@ -27,6 +27,7 @@ web/media/*
 !web/app/mu-plugins/base-roots-settings/*
 !web/app/mu-plugins/wp-no-category-base
 !web/app/mu-plugins/wp-no-category-base/*
+web/app/themes/theme/dist
 
 # Vendor (e.g. Composer)
 vendor
@@ -34,6 +35,10 @@ vendor
 
 # Node Package Manager
 node_modules
+npm-debug.log
+
+# Bower components
+bower_components
 
 # Vagrant
 bin
