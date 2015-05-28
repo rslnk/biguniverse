@@ -8,13 +8,13 @@
     },
     "main.css": {
       "files": [
-        "styles/main.scss"
+        "styles/main.styl"
       ],
       "main": true
     },
     "editor-style.css": {
       "files": [
-        "styles/editor-style.scss"
+        "styles/editor-style.styl"
       ]
     },
     "modernizr.js": {
@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://biguniverse.dev"
   }
 }
