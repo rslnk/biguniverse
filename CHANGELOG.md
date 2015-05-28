@@ -1,10 +1,14 @@
 ### 2.8.1: 2015-05-28
 
-* Install Soil 3.4.0
-* Install wp-h5bp-htaccess 2.0.1
-* Install ACF Pro 5.2.5
+* `gulp-iconify` task
+* Styles basic files and folder structure
+* Stylus
+* Kouto-Swiss framework
+* Add Soil 3.4.0 to mu-plugins
+* Add wp-h5bp-htaccess 2.0.1 to mu-plugins
+* Add ACF Pro 5.2.5 to mu-plugins
 * Setup base mu-plugin
-* Add `theme` as default theme
+* Set `theme` as default theme
 
 ### 2.8.0: 2015-05-27
 
