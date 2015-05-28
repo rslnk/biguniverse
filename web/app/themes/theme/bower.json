@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "modernizr": "2.8.2",
+    "modernizr": "2.8.2"
   },
   "overrides": {
     "modernizr": {
