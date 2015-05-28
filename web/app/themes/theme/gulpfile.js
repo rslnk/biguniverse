@@ -19,6 +19,8 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var iconify      = require('gulp-iconify');
 var stylus       = require('gulp-stylus');
+var less         = require('gulp-less');
+var sass         = require('gulp-sass');
 var koutoSwiss   = require('kouto-swiss');
 
 // See https://github.com/austinpray/asset-builder
@@ -84,6 +86,9 @@ var cssTasks = function(filename) {
     })
     .pipe(function() {
       return gulpif('*.styl', stylus());
+    })
+    .pipe(function() {
+      return gulpif('*.less', less());
     })
     .pipe(function() {
       return gulpif('*.scss', sass({
