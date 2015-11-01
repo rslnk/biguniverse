@@ -3,14 +3,15 @@
 /* ------------------------------- AND NOW Starting clean-up --------------------------------------- */
 
 // Activate Soil Plugin
-
-//add_theme_support('soil-clean-up');
-//add_theme_support('soil-relative-urls');
+add_theme_support('soil-clean-up');                 // Enable clean up from Soil
+//add_theme_support('soil-nav-walker');               // Enable cleaner nav walker from Soil
+//add_theme_support('soil-relative-urls');            // Enable relative URLs from Soil
+//add_theme_support('soil-jquery-cdn');               // Enable to load jQuery from the Google CDN
+//add_theme_support('soil-js-to-footer');             // Move all JS to the footer
+add_theme_support('soil-disable-trackbacks');       // Disable trackbacks
+add_theme_support('soil-disable-asset-versioning'); // Disable asset versioning
+add_theme_support('soil-google-analytics', 'UA-20570848-2', 'wp_head');   // Enable H5BP's Google Analytics snippet
 add_theme_support('soil-nice-search');
-add_theme_support('soil-google-analytics');
-define('GOOGLE_ANALYTICS_ID', 'UA-20570848-2');
-//add_theme_support('soil-js-to-footer');
-//add_theme_support('soil-disable-asset-versioning');
 
 // remove unncessary header info
 function remove_header_info() {
