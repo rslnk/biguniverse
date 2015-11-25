@@ -8,6 +8,8 @@
 
   <?php //if ( !is_tag('kometa-67p-churyumov-gerasimenko') ) get_template_part('widget', 'sidebar-posts--churyumov-gerasimenko'); ?>
 
+  <?php if ( !is_tag('kometa-c-2013-us10-catalina') ) get_template_part('widget', 'sidebar-posts--kometa-c-2013-us10-catalina'); ?>
+
   <?php if ( !is_tag('tserera') ) get_template_part('widget', 'sidebar-posts--tserera'); ?>
 
 	<?php if ( !is_home() && !is_search() && !is_category('authors') ) get_template_part('widget', 'sidebar-social--vk'); ?>
