@@ -37,18 +37,6 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "roots/soil",
-        "version": "3.5.0",
-        "type": "wordpress-muplugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://github.com/roots/soil/archive/master.zip"
-        }
-      }
     }
   ],
   "require": {
@@ -63,11 +51,12 @@
     "wpackagist-plugin/google-publisher": "1.2.0",
     "wpackagist-plugin/all-in-one-seo-pack": "2.2.7.2",
     "wpackagist-plugin/password-protected": "2.0.1",
-    "roots/wp-h5bp-htaccess": "1.1.0"
+    "roots/wp-h5bp-htaccess": "1.1.0",
+    "wpackagist-plugin/fv-top-level-cats": "1.8"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "roots/soil", "wpackagist-plugin/fv-top-level-cats", "wpackagist-plugin/cyr3lat"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },

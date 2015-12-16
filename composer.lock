@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b9af204c4385c0b64626cba604155686",
-    "content-hash": "975332a24074dce914e4d6c81c9ad14e",
+    "hash": "b2bd60d388e4b7b5d14fe927b7c2322a",
+    "content-hash": "55d936894a5369790d4140ae5c0b0c7d",
     "packages": [
         {
             "name": "composer/installers",
@@ -179,9 +179,14 @@
         {
             "name": "roots/soil",
             "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/soil.git",
+                "reference": "4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/roots/soil/archive/master.zip",
+                "url": "https://api.github.com/repos/roots/soil/zipball/4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0",
                 "reference": null,
                 "shasum": null
             },
@@ -321,6 +326,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/cyr3lat/"
+        },
+        {
+            "name": "wpackagist-plugin/fv-top-level-cats",
+            "version": "1.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/fv-top-level-cats/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fv-top-level-cats.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fv-top-level-cats/"
         },
         {
             "name": "wpackagist-plugin/google-publisher",
