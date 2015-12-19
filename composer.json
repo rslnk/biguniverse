@@ -42,7 +42,7 @@
   "require": {
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
-    "vlucas/phpdotenv": "2.0.1",
+    "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.4",
     "roots/soil": "3.5.0",
     "wpackagist-plugin/cyr3lat": "3.5",
