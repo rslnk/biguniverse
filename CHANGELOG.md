@@ -2,8 +2,9 @@
 
 ## HEAD
 
-## 2.9.0 Decemeber 18th, 2015
+## 2.9.0 January 25th, 2016
 
+-   Drop `base-roots-settings` mu-plugin
 -   Update CHANGELOG.md
 -   Update Soil plugin to 3.6.2
 -   Update to WordPress 4.4.1
