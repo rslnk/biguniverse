@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Bedrock Autoloader
  * Plugin URI: https://github.com/roots/bedrock/
- * Description: An autoloader that enables standard plugins to be required just like must-use plugins. The autoloaded plugins are included after all mu-plugins and standard plugins have been loaded. An asterisk (*) next to the name of the plugin designates the plugins that have been autoloaded.
+ * Description: An autoloader that enables standard plugins to be required just like must-use plugins. The autoloaded plugins are included during mu-plugin loading. An asterisk (*) next to the name of the plugin designates the plugins that have been autoloaded.
  * Version: 1.0.0
  * Author: Roots
- * Author URI: http://roots.io/
+ * Author URI: https://roots.io/
  * License: MIT License
  */
 
@@ -22,17 +22,17 @@ class Autoloader {
   private static $relative_path; // Relative path to the mu-plugins dir.
   private static $_single; // Let's make this a singleton.
 
-  function __construct() {
+  public function __construct() {
     if (isset(self::$_single)) { return; }
 
     self::$_single       = $this; // Singleton set.
     self::$relative_path = '/../' . basename(__DIR__); // Rel path set.
 
-    add_action('plugins_loaded', array($this, 'loadPlugins'), 0); // Always add filter to autoload.
-
     if (is_admin()) {
       add_filter('show_advanced_plugins', array($this, 'showInAdmin'), 0, 2); // Admin only filter.
     }
+
+    $this->loadPlugins();
   }
 
   /**
@@ -55,8 +55,9 @@ class Autoloader {
    */
   public function showInAdmin($bool, $type) {
     $screen = get_current_screen();
+    $current = is_multisite() ? 'plugins-network' : 'plugins';
 
-    if ($screen->{'base'} != 'plugins' || $type != 'mustuse' || !current_user_can('activate_plugins')) {
+    if ($screen->{'base'} != $current || $type != 'mustuse' || !current_user_can('activate_plugins')) {
       return $bool;
     }
 
@@ -94,7 +95,7 @@ class Autoloader {
     require_once(ABSPATH . 'wp-admin/includes/plugin.php');
 
     self::$auto_plugins = get_plugins(self::$relative_path);
-    self::$mu_plugins   = get_mu_plugins(self::$relative_path);
+    self::$mu_plugins   = get_mu_plugins();
     $plugins            = array_diff_key(self::$auto_plugins, self::$mu_plugins);
     $rebuild            = !is_array(self::$cache['plugins']);
     self::$activated    = ($rebuild) ? $plugins : array_diff_key($plugins, self::$cache['plugins']);

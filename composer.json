@@ -43,9 +43,11 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.4",
-    "roots/soil": "3.5.0",
+    "johnpbloch/wordpress": "4.4.1",
+    "roots/soil": "3.6.2",
     "wpackagist-plugin/cyr3lat": "3.5",
+    "wpackagist-plugin/amazon-s3-and-cloudfront": "0.9.11",
+    "wpackagist-plugin/amazon-web-services": "0.3.4",
     "wpackagist-plugin/tablepress": "1.7",
     "wpackagist-plugin/tablepress-chartist": "0.6",
     "wpackagist-plugin/google-publisher": "1.2.1",
@@ -54,7 +56,7 @@
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "roots/soil", "wpackagist-plugin/fv-top-level-cats", "wpackagist-plugin/cyr3lat"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "roots/soil", "wpackagist-plugin/amazon-web-services", "wpackagist-plugin/fv-top-level-cats", "wpackagist-plugin/cyr3lat"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
