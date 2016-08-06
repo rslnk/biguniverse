@@ -4,7 +4,7 @@
 
 		<div id="header">
 
-			<?php get_template_part( 'banner', 'top--donate' ); ?>
+			<?php // get_template_part( 'banner', 'top--donate' ); ?>
 
 			<div id="branding">
 				<div class="skip-link"><h1><a href="<?php echo home_url(); ?>/" title="<?php echo home_url(); ?>" rel="home"><?php bloginfo( 'name' ) ?></a></h1></div>
