@@ -2,7 +2,9 @@
 
     <?php get_template_part('widget', 'sidebar-social--twitter'); ?>
 
-    <?php if ( !is_tag('perseidy-2016') ) get_template_part('widget', 'sidebar-posts--perseidy-2016'); ?>
+    <?php //if ( !is_tag('perseidy-2016') ) get_template_part('widget', 'sidebar-posts--perseidy-2016'); ?>
+
+    <?php if ( !is_tag('gaia') ) get_template_part('widget', 'sidebar-posts--gaia'); ?>
 
     <?php if ( !is_tag('juno') ) get_template_part('widget', 'sidebar-posts--juno'); ?>
 
