@@ -6,7 +6,7 @@
 
 		<div id="posts-block" class="column-2x">
 
-		<?php loop_filter (); // hook отфилтровываем статьи из категории «видео» и wiki, кол-во постов = 9 ?>
+		<?php loop_filter (15); // hook отфилтровываем статьи из категории «видео» и wiki, кол-во постов = 14 + 1 ?>
 
 		<?php get_template_part( 'loop', 'tiles' ); ?>
 

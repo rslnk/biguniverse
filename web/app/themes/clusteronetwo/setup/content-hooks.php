@@ -1,7 +1,7 @@
 <?php
 
 /*
-* This function checs number of queries on each page 
+* This function checs number of queries on each page
 * and outputs info in html in footer
 *
 
@@ -20,7 +20,7 @@ function performance( $visible = false ) {
 /* ------------------------------- Temp functions / Future hooks for version 2.0 -------------------------------------------- */
 
 // filter out posts that belong to wiki & video categories, showing 9 post on page
-function loop_filter() {
+function loop_filter($postCount) {
    global $wp_query, $post;
 
         $idObj = get_category_by_slug('wiki');
@@ -28,8 +28,8 @@ function loop_filter() {
         $catid = $idObj->term_id;
         $catid_2 = $idObj_2->term_id;
         $exl_posts = 'post__not_in';
-      
-        query_posts( 'cat=-' . $catid . ',-' .$catid_2 . '&showposts=9' );
+
+        query_posts( 'cat=-' . $catid . ',-' .$catid_2 . '&showposts='.$postCount );
         wp_reset_postdata();
 }
 
@@ -44,7 +44,7 @@ function get_page_number() {
 function custom_title() {
   global $wp_query, $post;
   $html_title = get_post_meta($post->ID, 'custom_title', true);
-    if ($html_title) {  
+    if ($html_title) {
 
       $title_string = $html_title;
       if (strlen($title_string) >200) {
@@ -53,21 +53,21 @@ function custom_title() {
                 $title_stringCut = substr($title_string, 0, 200);
 
                 // make sure it ends in a word so assassinate doesn't become ass...
-                $title_string = substr($title_stringCut, 0, strrpos($title_stringCut, ' ')).'...'; 
+                $title_string = substr($title_stringCut, 0, strrpos($title_stringCut, ' ')).'...';
             }
 
       echo $title_string;
     }
-    // if it doesn't exist fallback to default title 
+    // if it doesn't exist fallback to default title
     else {
       the_title();
-    } 
+    }
     // Reset Post Data
 wp_reset_postdata();
 }
 
 // Show subcategory of the post as link
-function show_subcategory() {    
+function show_subcategory() {
   foreach((get_the_category()) as $subcategory)
 
   {
@@ -81,9 +81,9 @@ function show_subcategory() {
                 $stringCut = substr($string, 0, 40);
 
                 // make sure it ends in a word so "assassinate" doesn't become "ass"...
-                $string = substr($stringCut, 0, strrpos($stringCut, ' ')); //.'...'; 
+                $string = substr($stringCut, 0, strrpos($stringCut, ' ')); //.'...';
             }
-            
+
           echo '<a href="' . get_category_link($subcategory->cat_ID) . '">' . $string . '</a>';
 
       }
@@ -115,7 +115,7 @@ function get_projects($from_category, $limit) {
     $catid_3 = $idObj_3->term_id;
 
     $categories = get_categories('child_of=' . $catid_3 . '&orderby=date&order=DESC&title_li=&show_option_none=0&number=' . $num ); // сортируем рубрики по дате их создания
-    
+
     foreach($categories as $category) {
       $posts = get_posts('showposts=1&cat='. $category->term_id);
       print '<div id="project">';
@@ -134,7 +134,7 @@ wp_reset_postdata();
 }
 
 // список авторов отсортированный по дате добавления последней статьи
-function get_authors() { 
+function get_authors() {
   global $wp_query, $post;
 
   $uc=array();
@@ -156,7 +156,7 @@ function get_authors() {
       $login_name = get_the_author_meta('user_login', $user->ID );
       if ($post_count && $i < 3) {      // ограничиваем количество авторов
         $author_posts_url = get_author_posts_url($key);
-        echo 
+        echo
           '<div id="author" class="block x1 inline">
           <div class="imagewrap">
             <div class="tint">
@@ -167,7 +167,7 @@ function get_authors() {
             <div class="head"><a href="' . $author_posts_url . '">' . $user->display_name . '</a><div class="split"></div></div>
             <div class="bio">' . $authordesc . '</div>
           </div>
-        </div>';          
+        </div>';
       }
     $i++;
     }
