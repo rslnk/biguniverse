@@ -1,6 +1,6 @@
 <div id="curiosity-block">
 
-	<div class="head"><h1><strong>Межпланетная станция «Юнона» изучает Юпитер</strong><br />Новости, фото, видео</h1><div class="split"></div></div>
+	<div class="head"><h1><strong>Космический аппарат «Юнона» (Juno) изучает Юпитер</strong><br />Новости, фото, видео</h1><div class="split"></div></div>
 
 	<?php query_posts('tag=juno&showposts=5'); ?>
 
