@@ -6,7 +6,7 @@
 
 		<div id="posts-block" class="column-2x">
 
-		<?php loop_filter (15); // hook отфилтровываем статьи из категории «видео» и wiki, кол-во постов = 14 + 1 ?>
+		<?php loop_filter (23); // hook отфилтровываем статьи из категории «видео» и wiki, кол-во постов = 22 + 1 (sticky post) ?>
 
 		<?php get_template_part( 'loop', 'tiles' ); ?>
 
@@ -16,7 +16,7 @@
 
 			<div id="videos-block">
 
-				<?php query_posts('category_name=videos&showposts=5'); // показываем последние 3 поста из категории «видео» ?>
+				<?php query_posts('category_name=videos&showposts=7'); // показываем последние статьи из категории «видео» ?>
 
 					<?php if ( have_posts() ) : ?>
 
