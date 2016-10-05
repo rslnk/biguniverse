@@ -1,6 +1,6 @@
 <div id="sidebar" class="x2">
 
-    <?php if ( !is_single() ) get_template_part('widget', 'widget-sidebar-teaser--bolshaya-medvedica'); ?>
+    <?php if ( !is_search() ) get_template_part('widget', 'sidebar-teaser--bolshaya-medvedica'); ?>
 
     <?php if ( !is_tag('juno') ) get_template_part('widget', 'sidebar-posts--juno'); ?>
 
