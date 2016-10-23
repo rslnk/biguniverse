@@ -2,6 +2,11 @@
 
 ## HEAD
 
+## 2.9.1 October 23rd, 2016
+
+-   Update to WordPress 4.6.1
+-   Bedrock 1.7.2 compatibility updated
+
 ## 2.9.0 January 25th, 2016
 
 -   Drop `base-roots-settings` mu-plugin
