@@ -1,0 +1,98 @@
+/*
+ * Style headings in submitted content (i.e. via WordPress editor)
+*/
+.s-headings
+
+  h2
+  h3
+  h4
+  h5
+  h6
+    @extend .o-heading
+
+    font-weight $regular
+    line-height 1.2
+
+    strong
+    em
+    b
+      font-weight $semibold
+
+    +below('l')
+      margin-bottom rem(10px)
+
+    +above('l')
+      margin-bottom rem(20px)
+
+.s-headings
+
+  h2
+    line-height 1.3
+
+    +below('m')
+      font-size $deci
+
+    +between('m', 'l')
+      font-size $deca
+
+    +between('l', 'hd')
+      font-size $hecto
+
+    +above('hd')
+      font-size $kilo
+
+  h3
+
+    +below('m')
+      font-size $centi
+
+    +between('m', 'l')
+      font-size $deci
+
+    +between('l', 'hd')
+      font-size $deca
+
+    +above('hd')
+      font-size $hecto
+
+  h4
+
+    +below('m')
+      font-size $milli
+
+    +between('m', 'l')
+      font-size $centi
+
+    +between('l', 'hd')
+      font-size $deci
+
+    +above('hd')
+      font-size $deca
+
+  h5
+
+    +below('m')
+      font-size $micro
+
+    +between('m', 'l')
+      font-size $milli
+
+    +between('l', 'hd')
+      font-size $centi
+
+    +above('hd')
+      font-size $deci
+
+  h6
+
+    +below('m')
+      font-size $nano
+
+    +between('m', 'l')
+      font-size $milli
+
+    +between('l', 'hd')
+      font-size $centi
+
+    +above('hd')
+      font-size $deci

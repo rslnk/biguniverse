@@ -63,7 +63,7 @@ const webpackConfig = {
         }),
       },
       {
-        test: /\.scss$/,
+        test: /\.styl$/,
         include: config.paths.assets,
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style',
@@ -71,7 +71,7 @@ const webpackConfig = {
             `css?${sourceMapQueryStr}`,
             'postcss',
             `resolve-url?${sourceMapQueryStr}`,
-            `sass?${sourceMapQueryStr}`,
+            `stylus?${sourceMapQueryStr}`,
           ],
         }),
       },
@@ -115,6 +115,14 @@ const webpackConfig = {
     'node_modules',
     'bower_components',
   ],
+  stylus: {
+    preferPathResolver: 'webpack',
+    use: [
+      require('kouto-swiss')(),
+      require('rupture')(),
+      require('jeet')()
+    ]
+  },  
   enforceExtensions: false,
   externals: {
     jquery: 'jQuery',

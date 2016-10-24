@@ -2,6 +2,7 @@
 
 ## HEAD
 
+-   Add Stylus, kouto-swiss, rupture and Jeet
 -   Install Sage 9
 
 ## 2.9.1 October 23rd, 2016

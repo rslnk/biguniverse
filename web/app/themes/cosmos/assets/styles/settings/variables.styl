@@ -1,0 +1,90 @@
+//
+// 1. MEDIA QUERIES SCALE
+//
+
+// Media queries with Rupture @see: https://github.com/jenius/rupture#api-documentation
+// Note: Rapture is set to use em units for it's breakpoints,
+// since 1em = 1rem, all 'px' values tranlated to 'rem' for project consistency;
+
+
+// @stylint off
+rupture.scale                   = 0    rem(400px)  rem(600px)  rem(800px)  rem(1050px)  rem(1800px)  rem(2560px)
+//                                └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────
+rupture.scale-names             =     'xs'        's'         'm'         'l'         'xl'        'hd'       'uhd'
+// @stylint on
+
+//
+// 2. COLORS
+//
+
+$white              = #ffffff
+$black              = #000000
+
+$gray--light        = #eeeef1
+$gray               = #cdcdd7
+$gray--medium       = #9b9ba5
+$gray--dark         = #757580
+
+$indigo             = #2418b7
+$carbon-black       = #232326
+
+//
+// 3. TYPEFACES
+//
+
+$main-font          = 'Open Sans', font-stack('Helvetica')
+$heading-font       = 'Proxima Nova W01', $main-font
+
+//
+// 4. FONT SIZES
+//
+
+// Extra small
+$yocto              = rem(6px)
+$zepto              = rem(8px)
+// Small
+$atto               = rem(10px)
+$femto              = rem(12px)
+// Base
+$pico               = rem(14px)
+$nano               = rem(16px)
+$micro              = rem(18px)
+// Medium
+$milli              = rem(20px)
+$centi              = rem(22px)
+$deci               = rem(24px)
+$deca               = rem(26px)
+$hecto              = rem(28px)
+$kilo               = rem(30px)
+// Large
+$mega               = rem(36px)
+$giga               = rem(40px)
+$tera               = rem(45px)
+$peta               = rem(50px)
+// Extra large
+$exa                = rem(65px)
+$zetta              = rem(75px)
+$yotta              = rem(80px)
+
+//
+// 5. FONT WEIGHTS
+//
+
+$thin               = 100
+$light              = 300
+$regular            = 400
+$medium             = 500
+$semibold           = 600
+$bold               = 700
+$extrabold          = 800
+
+//
+// 6. BASE STYLES
+//
+
+$base-heading-font  = $heading-font
+$base-body-font     = $main-font
+$base-font-size     = $nano
+$base-font-color    = $carbon-black
+$base-line-height   = 1.5
+$base-spacing-unit  = rem($base-line-height)

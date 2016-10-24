@@ -56,6 +56,8 @@
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-webpack-plugin": "^1.1.0",
     "imports-loader": "^0.6.5",
+    "jeet": "^6.1.5",
+    "kouto-swiss": "^0.13.1",
     "lodash": "^4.15.0",
     "minimist": "^1.2.0",
     "monkey-hot-loader": "github:rmarscher/monkey-hot-loader#webpack2-import",
@@ -66,16 +68,15 @@
     "qs": "^6.2.1",
     "resolve-url-loader": "^1.6.0",
     "rimraf": "^2.5.4",
-    "sass-loader": "^4.0.2",
+    "rupture": "^0.6.2",
     "style-loader": "^0.13.1",
+    "stylus-loader": "^2.3.1",
     "url-loader": "^0.5.7",
     "webpack": "2.1.0-beta.22",
     "webpack-dev-middleware": "^1.7.0",
     "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
-    "bootstrap": "github:twbs/bootstrap#v4-dev",
-    "font-awesome": "^4.6.3",
     "jquery": "1.12.4 - 3"
   }
 }
