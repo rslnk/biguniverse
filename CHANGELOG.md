@@ -2,6 +2,8 @@
 
 ## HEAD
 
+-   Install Sage 9
+
 ## 2.9.1 October 23rd, 2016
 
 -   Update to WordPress 4.6.1

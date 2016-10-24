@@ -1,6 +1,23 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/upgrade
+web/media/*
+web/app/uploads/*
+web/media/*
+
 # WordPress
 web/wp
 web/.htaccess
+
+# Theme
+web/app/themes/cosmos/dist
+web/app/themes/cosmos/templates
+web/app/themes/cosmos/bower_components
+web/app/themes/cosmos/node_modules
+web/app/themes/cosmos/npm-debug.log
+web/app/themes/cosmos/vendor
 
 # WP-CLI
 db-sync
@@ -11,35 +28,13 @@ sql-dump-*.sql
 .env.*
 !.env.example
 
-# Application
-web/app/plugins
-!web/app/plugins/.gitkeep
-web/app/mu-plugins/*
-!web/app/mu-plugins/.gitkeep
-web/app/upgrade
-web/app/uploads
-web/media/*
-!web/media/.gitkeep
-!web/app/mu-plugins/disallow-indexing.php
-!web/app/mu-plugins/register-theme-directory.php
-!web/app/mu-plugins/bedrock-autoloader.php
-web/app/themes/theme/dist
-
 # Vendor (e.g. Composer)
-vendor
+vendor/*
 !vendor/.gitkeep
 
 # Node Package Manager
 node_modules
-npm-debug.log
-
-# Bower components
-bower_components
 
 # Vagrant
 bin
 .vagrant
-
-# Sublime Text project
-*.sublime-workspace
-*.sublime-project
