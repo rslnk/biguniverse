@@ -1,27 +1,21 @@
 {
-  "name": "roots/sage",
+  "name": "biguniverse/cosmos",
   "type": "wordpress-theme",
   "license": "MIT",
-  "description": "WordPress starter theme with a modern development workflow",
-  "homepage": "https://roots.io/sage/",
+  "description": "WordPress theme for BigUniverse magazine",
+  "homepage": "https://biguniverse.ru",
   "authors": [
     {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    },
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
+      "name": "Ruslan Komjakov",
+      "email": "ruslan@komyakov.me",
+      "homepage": "https://github.com/rslnk"
     }
   ],
   "keywords": [
     "wordpress"
   ],
   "support": {
-    "issues": "https://github.com/roots/sage/issues",
-    "forum": "https://discourse.roots.io/"
+    "issues": "https://github.com/rslnk/biguniverse/issues"
   },
   "autoload": {
     "psr-4": {

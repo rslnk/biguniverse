@@ -1,0 +1,8 @@
+article
+  header
+    h1
+      - the_title()
+    - get_template_part('partials/post-meta')
+  div
+    - the_content()
+  footer

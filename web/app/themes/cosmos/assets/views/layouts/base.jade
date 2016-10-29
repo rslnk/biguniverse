@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru-RU")
+  - get_template_part('partials/head')
+  body
+    - do_action('get_header');
+    - get_template_part('partials/header')
+    main
+      - include App\template()->main()
+    - if (App\display_sidebar()) :
+      aside
+        - App\template_part('partials/sidebar')
+    - endif
+    - do_action('get_footer')
+    - get_template_part('partials/footer')
+    - wp_footer()

@@ -1,0 +1,9 @@
+article
+  header
+    h2
+      a(href=the_permalink())
+        - the_title()
+    - get_template_part('partials/post-meta')
+  main
+    - the_excerpt()
+  
