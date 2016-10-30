@@ -6,6 +6,25 @@ use Roots\Sage\Template;
 use Roots\Sage\Template\Wrapper;
 
 /**
+ * Set save point for ACF Pro custom field groups JSON files
+ * @link http://www.advancedcustomfields.com/resources/local-json/
+ */
+add_filter('acf/settings/save_json', function ($path) {
+  $path = get_stylesheet_directory() . '/src/lib/Cosmos/Fields';
+  return $path;
+});
+
+/**
+ * Set load point for ACF Pro custom field groups JSON files
+ * @link http://www.advancedcustomfields.com/resources/local-json/
+ */
+add_filter('acf/settings/load_json', function ($paths) {
+  unset($paths[0]);
+  $paths[] = get_stylesheet_directory() . '/src/lib/Cosmos/Fields';
+  return $paths;
+});
+
+/**
  * Determine which pages should NOT display the sidebar
  * @link https://codex.wordpress.org/Conditional_Tags
  */

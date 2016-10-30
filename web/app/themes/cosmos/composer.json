@@ -19,7 +19,9 @@
   },
   "autoload": {
     "psr-4": {
-      "Roots\\Sage\\": "src/lib/Sage/"
+      "Roots\\Sage\\": "src/lib/Sage/",
+      "WPBasic\\": "src/lib/WPBasic/",
+      "Cosmos\\": "src/lib/Cosmos/"    
     }
   },
   "require": {

@@ -30,7 +30,19 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
-    }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advancedcustomfields/advancedcustomfields-pro",
+        "version": "5.4.8",
+        "type": "wordpress-muplugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzYwMTd8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTQtMDctMjkgMDA6MTM6MDg="
+        }
+      }
+    }    
   ],
   "require": {
     "php": ">=5.6",
@@ -39,20 +51,22 @@
     "johnpbloch/wordpress": "4.6.1",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "roots/soil": "3.6.2",
+    "roots/soil": "3.7.1",
+    "advancedcustomfields/advancedcustomfields-pro": "5.4.8",    
     "wpackagist-plugin/cyr3lat": "3.5",
     "wpackagist-plugin/amazon-s3-and-cloudfront": " 1.1.1",
     "wpackagist-plugin/amazon-web-services": "1.0",
     "wpackagist-plugin/google-publisher": "1.2.1",
-    "wpackagist-plugin/all-in-one-seo-pack": "2.2.7.5",
-    "wpackagist-plugin/fv-top-level-cats": "1.8"
+    "wpackagist-plugin/fv-top-level-cats": "1.8.2",
+    "wpackagist-plugin/wordpress-seo": "3.7.1",
+    "wpackagist-plugin/so-clean-up-wp-seo": "2.5.2"    
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin",  "roots/soil", "wpackagist-plugin/amazon-web-services", "wpackagist-plugin/fv-top-level-cats", "wpackagist-plugin/cyr3lat"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin",  "roots/soil", "wpackagist-plugin/amazon-web-services", "wpackagist-plugin/fv-top-level-cats", "wpackagist-plugin/cyr3lat", "wpackagist-plugin/so-clean-up-wp-seo"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
