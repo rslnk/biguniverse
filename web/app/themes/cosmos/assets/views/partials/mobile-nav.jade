@@ -1,0 +1,5 @@
+div.c-modal-nav.js-modal-menu
+  nav.c-modal-nav__content
+    - if (has_nav_menu('modal_navigation')) :
+      - wp_nav_menu(['theme_location' => 'modal_navigation', 'menu_class' => 'c-modal-nav'])
+    - endif

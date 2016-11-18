@@ -1,0 +1,39 @@
+/*
+ * Site navigation menu (list)
+*/
+.c-menu
+  @extend .o-ui-list
+
+  display none // hide menu on small screens
+
+  font-family $base-body-font
+  font-weight $regular
+  text-transform uppercase
+
+  +above('l')
+    display block // display menu on screens larger then mobile/tablet
+    position absolute
+    margin-left rem(80px)
+    
+  .c-menu__item
+    display inline
+    position relative
+
+    a
+      display inline-block
+      padding rem(20px) rem(8px)
+    
+      font-size $femto
+      line-height 1
+      
+      color $gray--medium
+      transition color .2s ease-in
+
+      &:hover
+      &:focus
+        color $black
+
+  // Active menu link
+  .is-active
+    a
+      color $black

@@ -2,6 +2,18 @@
 
 ## HEAD
 
+-   Start adding basic markup components and styles
+-   Integrate Gulp tasks into npm tasks to run Webpack and Gulp concurrently
+-   Add Gulp `templates` tasks for genrating php templates from jade views
+-   Add Gulp `iconfont` task for generating web fonts from svg icons
+-   Add 'Services' options to admin Settings page
+-   Configure theme basic settings in `src/setup.php`
+-   Register admin option pages
+-   Configure `src/admin.php` to prettify WordPress admin
+-   Set ACF Pro plugin save/load paths to `src/lib/Cosmos/Fields`
+-   Add `src/lib/WPBasic` classes and methods that extend WordPress funcutionality
+-   Register must-use plugins
+-   Add `.stylintrc`
 -   Add Stylus, kouto-swiss, rupture and Jeet
 -   Install Sage 9
 

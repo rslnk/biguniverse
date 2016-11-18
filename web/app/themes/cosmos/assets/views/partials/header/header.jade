@@ -1,0 +1,11 @@
+div.c-masthead
+  div.c-masthead__main
+    div.test
+      h1
+        - bloginfo('name')
+  header.c-global-nav.js-global-nav
+    include includes/logo.jade
+    include includes/menu.jade
+    include includes/utils.jade
+    include includes/follow-options.jade
+    - get_template_part('partials/mobile-nav')

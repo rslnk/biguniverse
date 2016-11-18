@@ -18,21 +18,24 @@
     }
   ],
   "scripts": {
-    "build": "webpack --progress --config assets/build/webpack.config.js && build:templates",
+    "build": "npm run build:templates && npm run build:iconfont && webpack --progress --config assets/build/webpack.config.js",
     "build:production": "npm run build -s -- -p",
     "watch:webpack": "webpack --progress --config assets/build/webpack.config.js",
-    "start": "npm run build:templates && concurrently --kill-others --raw 'npm run watch:webpack -s -- --watch' 'npm run watch:views'",
+    "start": "npm run build:templates && npm run build:iconfont && concurrently --kill-others --raw 'npm run watch:webpack -s -- --watch' 'npm run watch:views' 'npm run watch:icons'",
     "clean": "rimraf dist",
     "lint": "eslint assets/scripts assets/build",
     "test": "npm run lint -s",
     "watch:views": "onchange 'assets/views/**/*.jade' -- npm run build:templates",
-    "build:templates": "gulp templates"
+    "watch:icons": "onchange 'assets/images/icons/**/*.svg' -- npm run build:iconfont",
+    "build:templates": "gulp templates",
+    "build:iconfont": "gulp iconfont"
   },
   "engines": {
     "node": ">= 4.5"
   },
   "devDependencies": {
     "assets-webpack-plugin": "^3.4.0",
+    "async": "^2.1.2",
     "autoprefixer": "^6.4.1",
     "babel-cli": "^6.14.0",
     "babel-core": "^6.14.0",
@@ -58,7 +61,8 @@
     "file-loader": "^0.9.0",
     "glob-all": "^3.1.0",
     "gulp": "^3.9.1",
-    "gulp-jade-for-php": "^1.0.9",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-iconfont": "^8.0.1",
     "gulp-jade-php": "^2.0.0-0",
     "gulp-plumber": "^1.1.0",
     "imagemin-mozjpeg": "^6.0.0",

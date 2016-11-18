@@ -1,0 +1,13 @@
+ul.c-nav__follow
+  li
+    a(href!="<?= 'https://www.facebook.com/' . get_field('facebook_user_name', 'option'); ?>" rel="external").c-icon-facebook
+      span.u-visually-hidden
+        - the_field('wa_follow_us_text', 'option') . _e('Facebook', 'cosmos')
+  li
+    a(href!="<? echo 'https://www.twitter.com/' . get_field('twitter_user_name', 'option'); ?>" rel="external").c-icon-twitter
+      span.u-visually-hidden
+        - the_field('wa_follow_us_text', 'option') . _e('Twitter', 'cosmos')
+  li
+    a(href!="<? echo 'https://vk.com/' . get_field('vk_group_name', 'option'); ?>" rel="external").c-icon-vk
+      span.u-visually-hidden
+        - the_field('wa_follow_us_text', 'option') . _e('VK', 'cosmos')

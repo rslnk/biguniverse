@@ -1,16 +1,21 @@
 doctype html
 html(lang="ru-RU")
   - get_template_part('partials/head')
+  
   body
     - App\get_facebook_sdk()
     - do_action('get_header');
-    - get_template_part('partials/header')
-    main
+    - get_template_part('partials/header/header')
+    
+    main.o-centered-content
       - include App\template()->main()
+    
     - if (App\display_sidebar()) :
       aside
         - App\template_part('partials/sidebar')
     - endif
+    
     - do_action('get_footer')
     - get_template_part('partials/footer')
+    - get_template_part('partials/modal-search')
     - wp_footer()

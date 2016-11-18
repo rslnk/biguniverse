@@ -1,0 +1,16 @@
+ul.c-nav-utils
+  //- Modal search toggle icon
+  li.c-nav__search-toggle
+    a(href="#" data-target=".js-modal-search").c-icon-search.js-toggle-modal-search
+    span.u-visually-hidden
+      - the_field('wa_text_toggle_search', 'option')
+  
+  //- Modal menu toggle icon
+  li.c-nav__modal-menu-toggle
+    a(href="#" data-target=".js-modal-menu").c-icon-menu.js-toggle-modal-menu
+      span
+      span
+      span
+      
+    span.u-visually-hidden
+      - the_field('wa_text_toggle_menu', 'option')

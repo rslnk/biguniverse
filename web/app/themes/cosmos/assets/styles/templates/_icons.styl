@@ -1,0 +1,13 @@
+/**
+ * Iconfont icons (components)
+ *
+ *    Generated with `gulp-iconfont` task using template at `styles/templates/_icons.styl`
+ *    @link: https://www.npmjs.com/package/gulp-iconfont
+ */
+<% _.each(glyphs, function(glyph) { %>
+.<%= componentsClass %>-<%= glyph.name %>
+  @extend .<%= objectsClass %>
+
+  &:before
+    content: "\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>" !important // @stylint ignore
+<% });  %>
