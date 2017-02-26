@@ -45,14 +45,24 @@
     "wpackagist-plugin/amazon-web-services": "1.0",
     "wpackagist-plugin/google-publisher": "1.2.1",
     "wpackagist-plugin/all-in-one-seo-pack": "2.2.7.5",
-    "wpackagist-plugin/fv-top-level-cats": "1.8"
+    "wpackagist-plugin/fv-top-level-cats": "1.8",
+    "wpackagist-plugin/tablepress": "1.8",
+    "wpackagist-plugin/charts-for-tablepress-chartist": "0.8"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin",  "roots/soil", "wpackagist-plugin/amazon-web-services", "wpackagist-plugin/fv-top-level-cats", "wpackagist-plugin/cyr3lat"],
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin",  
+        "roots/soil", 
+        "wpackagist-plugin/amazon-web-services", 
+        "wpackagist-plugin/fv-top-level-cats", 
+        "wpackagist-plugin/cyr3lat",
+        "wpackagist-plugin/tablepress",
+        "wpackagist-plugin/charts-for-tablepress-chartist"
+      ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
