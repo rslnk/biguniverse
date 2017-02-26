@@ -44,10 +44,10 @@
     "wpackagist-plugin/amazon-s3-and-cloudfront": " 1.1.1",
     "wpackagist-plugin/amazon-web-services": "1.0",
     "wpackagist-plugin/google-publisher": "1.2.1",
-    "wpackagist-plugin/all-in-one-seo-pack": "2.2.7.5",
     "wpackagist-plugin/fv-top-level-cats": "1.8",
     "wpackagist-plugin/tablepress": "1.8",
-    "wpackagist-plugin/charts-for-tablepress-chartist": "0.8"
+    "wpackagist-plugin/charts-for-tablepress-chartist": "0.8",
+    "wpackagist-plugin/autodescription": "2.8.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
