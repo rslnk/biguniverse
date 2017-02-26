@@ -2,6 +2,12 @@
 
 ## HEAD
 
+## 2.9.2 February 26rd, 2017
+
+-   Update to WordPress 4.7.2, bump plugins versions
+-   Switch to The SEO Framework plugin
+-   Return missing tablepress plugin
+
 ## 2.9.1 October 23rd, 2016
 
 -   Update to WordPress 4.6.1
