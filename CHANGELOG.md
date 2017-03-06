@@ -2,6 +2,8 @@
 
 ## HEAD
 
+-   Update to WordPress 4.7.3 (security update)
+
 ## 2.9.2 February 26rd, 2017
 
 -   Update to WordPress 4.7.2, bump plugins versions
